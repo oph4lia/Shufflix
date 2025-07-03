@@ -106,3 +106,13 @@ body {
 footer {
   background-color: var(--primary-color) !important;
 }
+
+.highlight-winner {
+  animation: winner-flash 1s ease;
+}
+
+@keyframes winner-flash {
+  0% { background-color: #fff700; transform: scale(1); }
+  50% { background-color: #fff700; transform: scale(1.05); }
+  100% { background-color: inherit; transform: scale(1); }
+}
